@@ -1,0 +1,24 @@
+:root {
+  --color: red;
+  --my-font: 10px "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  background: #eee;
+  font: var(--my-font);
+
+  & div,
+  & input {
+    font-size: 1.6rem;
+  }
+
+  & h1 {
+    font-size: 2.4rem;
+    animation: my-animation .2s linear;
+  }
+
+  & h2 {
+    font-size: 2rem;
+    color: var(--color);
+  }
+}
